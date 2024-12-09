@@ -1,9 +1,14 @@
 @import "../css/normalize.css";
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
+@import "../../styles/css/variables.css";
 @import "./variables";
 @import "./general";
 @import "./header";
+@import "./logo";
+@import "./site-nav";
+@import "./banner";
+@import "./socials";
 @import "./footer";
 
 @import "animation-hover.css";

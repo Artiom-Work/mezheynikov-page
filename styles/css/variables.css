@@ -1,0 +1,13 @@
+:root {
+	--main-font1-en: "Anton Regular", sans-serif;
+	--main-font1-ru: "Vocal Bold", sans-serif;
+	--main-font2-medium: "Montserrat Medium", sans-serif;
+	--main-font2-bold: "Montserrat Bold", sans-serif;
+	--main-font2-Semibold: "Montserrat SemiBold", sans-serif;
+
+	--primary-main-color: #c31616;
+	--primary-black-color: #111214;
+	--secondary-color-grey: #a7aab4;
+	--secondary-color-grey-light: #f7f7f7;
+	--text-color-grey: #a9a9aa;
+}

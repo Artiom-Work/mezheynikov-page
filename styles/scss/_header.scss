@@ -1,0 +1,97 @@
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+  background-image: url(../../images/header/header-background.png);
+  @media (max-width: 768px) {
+    min-height: 540px;
+  }
+  @include backgroundCenterCover;
+  .container {
+    min-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template: minmax(40px, 245px) 1fr / repeat(2, 1fr);
+    grid-template-areas:
+      "top top"
+      "banner socials";
+    column-gap: 15px;
+    @media (max-width: 768px) {
+      min-height: 500px;
+      grid-template: minmax(40px, 150px) 1fr / repeat(2, 1fr);
+      grid-template-areas:
+        "top top"
+        "banner socials";
+    }
+    @media (max-width: 450px) {
+      grid-template: minmax(180px, 150px) minmax(150px, 370px) / repeat(2, 1fr);
+      grid-template-areas:
+        "top top"
+        "banner socials";
+    }
+  }
+  &__top {
+    z-index: 1;
+    padding: 24px 0;
+    @include flexSpaceBetween;
+    grid-area: top;
+    align-self: self-start;
+    @media (max-width: 450px) {
+      padding: 35px 0;
+    }
+  }
+  @include backgroundCenterCover;
+  background-position: left center;
+  &__top-button {
+    display: inline-block;
+    @include button(
+      $main-font2-Semibold,
+      12px 16px,
+      $primary-main-color,
+      4px,
+      transparent,
+      12px,
+      100%
+    );
+    outline: 1px solid $primary-main-color;
+    text-transform: uppercase;
+    transition: all 0.4s ease 0s;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .header__pictures {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 738px;
+    filter: brightness(0.3) drop-shadow(10px 0 30px black);
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: end;
+    }
+  }
+  .header__picture {
+    width: 100%;
+    @media (max-width: 768px) {
+      object-position: 169px 137px;
+      width: 82%;
+    }
+    @media (max-width: 450px) {
+      object-position: 215px 40px;
+      width: 70%;
+    }
+  }
+  &__shadow-background {
+    position: absolute;
+    width: 100%;
+    min-height: 90px;
+    filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0px;
+    z-index: 1;
+    @media (max-width: 768px) {
+      min-height: 80px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+body {
+  font-family: $main-font2-medium;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #fff;
+  color: $text-color-grey;
+}
+
+a {
+  color: $text-color-grey;
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
+.button {
+  @include button(
+    $main-font2-Semibold,
+    17px 24px,
+    #fff,
+    4px,
+    $primary-main-color,
+    12px,
+    100%
+  );
+  text-transform: capitalize;
+  transition: all 0.4s ease 0s;
+}

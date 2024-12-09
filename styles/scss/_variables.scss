@@ -1,6 +1,19 @@
-@mixin button($_padd, $_bordR, $_backg, $_fonS, $_linH) {
-  font-family: "Gotham700", sans-serif;
-  color: #fff;
+$main-font1-en: "Anton Regular", sans-serif;
+$main-font1-ru: "Vocal Bold", sans-serif;
+$main-font2-medium: "Montserrat Medium", sans-serif;
+$main-font2-bold: "Montserrat Bold", sans-serif;
+$main-font2-Semibold: "Montserrat SemiBold", sans-serif;
+
+$primary-main-color: #c31616;
+$primary-black-color: #111214;
+$secondary-color-grey: #a7aab4;
+$secondary-color-grey-light: #f7f7f7;
+$text-color-grey: #a9a9aa;
+$border-color: #57595d;
+
+@mixin button($_ff, $_padd, $_col, $_bordR, $_backg, $_fonS, $_linH) {
+  font-family: $_ff;
+  color: $_col;
   padding: $_padd;
   border-radius: $_bordR;
   background: $_backg;
